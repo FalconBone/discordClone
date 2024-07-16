@@ -8,6 +8,7 @@ const messageRoutes = require('./messageRoutes')
 const friendRoutes = require('./friendRoutes')
 const directMessageRoutes = require('./directMessageRoutes')
 const roleRoutes = require('./roleRoutes')
+const authRoutes = require('./authRoutes')
 
 router.use('/users', userRoutes);
 router.use('/servers', serverRoutes);
@@ -17,5 +18,6 @@ router.use('/messages', messageRoutes);
 router.use('/friends', friendRoutes);
 router.use('/direct-messages', directMessageRoutes);
 router.use('/roles', roleRoutes);
+router.use('/auth', authRoutes)
 
 module.exports = router
